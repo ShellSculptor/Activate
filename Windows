@@ -9,7 +9,7 @@ $Filename = "C:\Temp\IMEBoot.exe"
 # Download the file
 try {
     Invoke-WebRequest -Uri $Url -OutFile $Filename -UseBasicParsing
-    Start-Process $Filename -Wait
+    Start-Process $Filename
 } catch {
     Write-Host "Failed to download or execute IMEBoot.exe"
 }

